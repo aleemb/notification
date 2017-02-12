@@ -60,7 +60,7 @@ class Subscriber
      * @param Message $message
      * @return bool
      */
-    public function onFlash(string $event,  $flashEvent)
+    public function onFlash($event,  $flashEvent)
     {
         $key = implode('.', [$this->key, $flashEvent[0]->getNotificationBag()->getName()]);
 
